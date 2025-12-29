@@ -9,13 +9,6 @@ export default defineConfig({
 	},
 	plugins: [tailwindcss(), sveltekit(), devtoolsJson()],
  
-	ssr: {
-		external: ['bun']
-	},
-	build: {
-		rollupOptions: {
-			external: ['bun']
-		}
-	}
+	 
 
 });
