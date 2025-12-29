@@ -5,7 +5,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "bun run --bun vite dev",
-		"build": "bun --bun vite build",
+		"build": "bun run --bun vite build",
 		"preview": "bun run ./build/index.js",
 		"preview:vite": "bun --bun vite preview",
 		"clean": "rm -rf .svelte-kit",
