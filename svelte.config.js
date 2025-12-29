@@ -1,4 +1,4 @@
-import adapter from '@sveltejs/adapter-netlify';
+import adapter from '@sveltejs/adapter-vercel';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
  
 
@@ -17,7 +17,9 @@ const config = {
 			$server: 'src/lib/server',
 			 
 		},
-		adapter: adapter()
+		adapter: adapter({
+			runtime: 'nodejs20.x' 
+		})
 	}
 };
 

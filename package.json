@@ -4,8 +4,9 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
+		"sync": "svelte-kit sync",
 		"dev": "bun run --bun vite dev",
-		"build": "bun run --bun vite build  ",
+		"build": "svelte-kit sync && vite build",
 		"preview": "bun run ./build/index.js",
 		"preview:vite": "bun --bun vite preview",
 		"clean": "rm -rf .svelte-kit",
